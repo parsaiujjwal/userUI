@@ -1,0 +1,158 @@
+#search::placeholder {
+  color: #fc4a1a;
+}
+.sidebar{
+  background: linear-gradient(45deg, #833AB4, #C13584);
+  color: white;
+}
+.crown {
+  font-size: 25px;
+  color: yellow;
+}
+
+.crown:hover {
+  transform: rotate(-10deg);
+}
+
+.AddPost {
+  font-size: 20px;
+  color: white;
+}
+
+.AddPost:hover {
+  color: black;
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+
+.stroke ul {
+  list-style: none;
+  text-align: center;
+}
+
+.stroke ul li {
+  display: inline-block;
+}
+
+.stroke ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  margin: 0 10px;
+}
+
+.stroke ul li a,
+.stroke ul li a:after,
+.stroke ul li a:before {
+  transition: all .5s;
+}
+
+.stroke ul li a:hover {
+  color: white;
+}
+
+.stroke ul li a {
+  position: relative;
+}
+
+.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 1px;
+}
+
+.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 980px) {
+  .stroke ul li {
+    margin-bottom: 10px;
+  }
+}
+
+.search {
+  margin-top: 7px;
+}
+
+.search i {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.search:hover {
+  color: black;
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.chat {
+  margin-top: 0px;
+}
+
+.chat i {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.chat:hover {
+  color: black;
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.notify-container{
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: end;
+  background-color: aqua;
+  z-index: -2;
+  margin-top: -23.3px;
+}
+
+.notify-main{
+  height: 91.5vh;
+  overflow-y: scroll;
+  position: fixed;
+  width: 350px;
+  background-color: whitesmoke;
+  z-index: 3;
+}
+
+
+@media only screen and (max-width: 560px) {
+  .notify-main{
+    width: 100%;
+  }
+}
+
+.notification-block{
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  /* align-items: center; */
+}
+
+.notification-block:hover{
+  background-color: rgb(235, 235, 235);
+}
+
